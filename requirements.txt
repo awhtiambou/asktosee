@@ -1,0 +1,10 @@
+opencv-python
+matplotlib
+Pillow
+numpy
+pandas
+streamlit
+transformers
+git+https://github.com/openai/CLIP.git
+git+https://github.com/facebookresearch/segment-anything.git
+git+https://github.com/openai/whisper.git

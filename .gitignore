@@ -5,3 +5,4 @@ outputs/
 data/
 .env
 .DS_Store
+thirdparty/
