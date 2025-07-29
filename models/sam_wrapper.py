@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 class SAMSegmenter:
-    def __init__(self, model_type="vit_b", checkpoint_path="./../thirdparty/segment-anything/weights/sam_vit_b.pth"):
+    def __init__(self, model_type="vit_b", checkpoint_path="./thirdparty/segment-anything/weights/sam_vit_b.pth"):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model = sam_model_registry[model_type](checkpoint=checkpoint_path).to(self.device)
         self.predictor = SamPredictor(self.model)
@@ -50,7 +50,7 @@ def sam_wrapper_unit_test():
     # Initialize SAM
     segmenter = SAMSegmenter(
         model_type="vit_b",
-        checkpoint_path="./../thirdparty/segment-anything/weights/sam_vit_b.pth"
+        checkpoint_path="./thirdparty/segment-anything/weights/sam_vit_b.pth"
     )
 
     # Set the image

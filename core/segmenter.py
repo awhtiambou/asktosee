@@ -6,7 +6,7 @@ from models.sam_wrapper import SAMSegmenter
 import matplotlib.pyplot as plt
 
 class PromptSegmenter:
-    def __init__(self, sam_ckpt_path="./../thirdparty/segment-anything/weights/sam_vit_b.pth"):
+    def __init__(self, sam_ckpt_path="./thirdparty/segment-anything/weights/sam_vit_b.pth"):
         self.clip = CLIPEncoder()
         self.sam = SAMSegmenter(checkpoint_path=sam_ckpt_path)
 

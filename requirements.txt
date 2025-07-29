@@ -19,3 +19,6 @@ more-itertools~=10.7.0
 tiktoken~=0.9.0
 torchaudio~=2.7.1+cu126
 segment_anything~=1.0
+fastapi~=0.116.1
+uvicorn
+python-multipart
