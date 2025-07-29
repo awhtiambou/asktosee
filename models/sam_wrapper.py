@@ -2,7 +2,6 @@ import torch
 import numpy as np
 from PIL import Image
 from segment_anything import SamPredictor, sam_model_registry
-import cv2
 import matplotlib.pyplot as plt
 
 
